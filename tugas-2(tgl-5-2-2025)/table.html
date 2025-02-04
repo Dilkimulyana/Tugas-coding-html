@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <style>
+    .navbar {
+      background-color: #82ebfd;
+      display: block;
+      max-height: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    .navbar ul {
+      list-style: none;
+      font-size: 1em;
+      display: inline;
+      justify-content: left;
+      display: flex;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      background-color: #09afcc;
+      border-radius: 5px;
+      color: #000;
+    }
+    .a , .a th, .a td{
+      border: 1px solid black;
+    }
+    .b , .b th, .b td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    .c table,.c th,.c td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+.c th,.c td {
+  background-color: #96D4D4;
+}
+.d table,.d th,.d td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.e th,.e td, {
+  border-style: dotted;
+}
+.e tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+.f th, .f td {
+  border-style: solid;
+  border-color: #96D4D4;
+}
+    .f td:nth-child(even),.f th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+.h table,.h th,.h td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+    .g, .g th, .g td {
+      border: 1px solid black;
+      padding: 15px;
+      border-spacing: 15px;
+    }
+    footer {
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+    </ul>
+  </nav>
+<fieldset>
+  <legend>table</legend>
+   <table>
+  <tr>
+    <th>sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr>
+    <td>chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>ice cream</td>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+</fieldset>
+<!-- 1 -->
+<h2>Table 1</h2>
+   <table class="a" style="width: 100%;">
+  <tr>
+    <th style="width: 70%;">sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr style="height: 100px;">
+    <td>chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>ice cream</td>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+<!-- 2 -->
+<h2>Table 2</h2>
+<caption>Foods</caption>
+  <table class="b">
+  <tr>
+    <th colspan="2">sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr>
+    <td>chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>ice cream</td>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+<!-- 3 -->
+<h2>Table 3</h2>
+ <table class="c">
+  <tr>
+    <th>sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr>
+    <td rowspan="2">chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+<!-- 4 -->
+<h2>Table 4</h2>
+<table class="d">
+  <tr>
+    <th>sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr>
+    <td>chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>ice cream</td>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+<!-- 5 -->
+<h2>table 5</h2>
+<table class="e">
+  <tr>
+    <th>sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr>
+    <td>chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>ice cream</td>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+<!-- 6 -->
+<h2>Table 6</h2>
+<table class="f">
+  <tr>
+    <th>sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr>
+    <td>chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>ice cream</td>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+<!-- 7 -->
+<h2>Table 7</h2>
+<table class="g">
+  <tr>
+    <th>sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr>
+    <td>chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>ice cream</td>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+<!-- 8 -->
+<h2>Table 8</h2>
+<table class="h">
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+  <tr>
+    <th>sweet food</th>
+    <th>salty food</th>
+    <th>drink</th>
+  </tr>
+  <tr>
+    <td>chocolate</td>
+    <td>fried chicken</td>
+    <td>soda</td>
+  </tr>
+  <tr>
+    <td>ice cream</td>
+    <td>borito</td>
+    <td>milk</td>
+  </tr>
+</table>
+<pre style="font-family: arial;">
+  There is only a very limited selection of CSS
+  properties that are allowed to be used
+  in the colgroup:
+
+width property
+visibility property
+background properties
+border properties
+
+All other CSS properties will have no effect on your
+tables.
+
+The following values are allowed:
+
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden
+</pre>
+<footer>
+   <p>&copy;<small> Be a nice guy</small></p>
+</footer>
+</body>
+</html>

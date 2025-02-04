@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List</title>
+  <style>
+    .navbar {
+      background-color: #82ebfd;
+      display: block;
+      max-height: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    .navbar ul {
+      list-style: none;
+      font-size: 1em;
+      display: inline;
+      justify-content: left;
+      display: flex;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      background-color: #09afcc;
+      border-radius: 5px;
+      color: #000;
+    }
+    footer {
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Index.html"></a>Home</li>
+    </ul>
+  </nav>
+<fieldset>
+  <legend>Unordered list</legend>
+  <ul>
+    <li>data</li>
+    <li>data</li>
+    <li>data</li>
+    <li>data</li>
+  </ul>
+  <ul>
+  <li>data</li>
+  <li>data
+    <ul style="list-style-type: square;">
+      <li>sub data</li>
+      <li>sub data</li>
+    </ul>
+  </li>
+  <li>data</li>
+</ul>
+  <p>value<br>
+  <pre>
+    disc
+    circle
+    square
+    none
+  </pre></p>
+</fieldset>
+<fieldset>
+  <legend>Ordered list</legend>
+  <ol>
+    <li>data</li>
+    <li>data</li>
+    <li>data</li>
+    <li>data</li>
+  </ol>
+  <ol start="100">
+  <li>Coffee</li>
+  <li>Tea
+  <ol type="I">
+      <li >Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+  <p>type
+  <pre>
+    1
+    A 
+    a 
+    I 
+    i 
+  </pre></p>
+</fieldset>
+<fieldset>
+  <legend>Description list</legend>
+  <dl>
+    <dt>folder</dt>
+    <dd>data</dd>
+    <dt>folder</dt>
+    <dd>data</dd>
+  </dl>
+</fieldset>
+<footer>
+   <p>&copy;<small> I've been do the best</small></p>
+</footer>
+</body>
+</html>

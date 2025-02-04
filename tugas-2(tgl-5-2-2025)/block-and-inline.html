@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block and inline</title>
+  <style>
+    .navbar {
+      background-color: #82ebfd;
+      display: block;
+      max-height: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    .navbar ul {
+      list-style: none;
+      font-size: 0.1em;
+      display: inline;
+      justify-content: left;
+      display: flex;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      display: flex;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      background-color: #09afcc;
+      border-radius: 5px;
+      color: #000;
+    }
+    footer {
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+    </ul>
+  </nav>
+<fieldset>
+  <legend>block and inline</legend>
+  <h2 style="background-color: rgba(151,245,255,0.516)">Box-level element</h2>
+  <p>is a <span style="background-color:rgba(151,245,255,0.516) ">inline-level</span> element</p>
+</fieldset>
+<footer>
+   <p>&copy;<small> Butterfly efect</small></p>
+</footer>
+</body>
+</html>

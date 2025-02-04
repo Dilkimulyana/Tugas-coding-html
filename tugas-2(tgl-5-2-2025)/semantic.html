@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .navbar {
+      background-color: #82ebfd;
+      display: block;
+      max-height: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    .navbar ul {
+      list-style: none;
+      font-size: 1em;
+      display: inline;
+      justify-content: left;
+      display: flex;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      background-color: #09afcc;
+      border-radius: 5px;
+      color: #000;
+    }
+    pre {
+      font-family: Arial;
+    }
+    aside {
+     width: 30%;
+     padding-left: 15px;
+     margin-left: 15px;
+     float: right;
+     font-style: italic;
+     background-color: lightgray;
+    }
+    footer {
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+    </ul>
+  </nav>
+<fieldset>
+  <legend>semantic</legend>
+      <p>Many web sites contain HTML code like: div id="nav" div class="header" div id="footer" to indicate navigation, header, and footer.</p>
+      <p>In HTML there are several semantic elements that can be used to define different parts of a web page:</p>
+      <pre>
+aside
+details
+figcaption
+figure
+footer
+header
+main
+mark
+nav
+section
+summary
+time
+    </pre>
+</fieldset>
+<fieldset>
+  <legend>Section</legend>
+  <pre>
+    The section element defines a section in a
+    document.
+
+According to W3C's HTML documentation: "A section
+is a thematic grouping of content, typically with 
+a heading."
+
+Examples of where a section element can be used:
+
+Chapters
+Introduction
+News items
+Contact information
+  </pre>
+</fieldset>
+<fieldset>
+  <legend>Article</legend>
+  <pre>
+    The article element specifies independent,
+    self-contained content.
+
+An article should make sense on its own, and it
+should be possible to distribute it independently
+from the rest of the web site.
+
+Examples of where the article element can be used:
+
+Forum posts
+Blog posts
+User comments
+Product cards
+Newspaper articles
+  </pre>
+</fieldset>
+<fieldset>
+  <legend>Header</legend>
+  <pre>
+    The header element represents a container 
+    for introductory content or a set of
+    navigational links.
+
+A header element typically contains:
+
+one or more heading elements (h1 - h6)
+logo or icon
+authorship information
+  </pre>
+  <p><b>Note: </b>You can have several header elements in one HTML document. However, header cannot be placed within a footer, address or another header element.</p>
+</fieldset>
+<fieldset>
+  <legend>Footer</legend>
+  <pre>
+    The footer element defines a footer for
+    a document or section.
+
+A footer element typically contains:
+
+authorship information
+copyright information
+contact information
+sitemap
+back to top links
+related documents
+  </pre>
+</fieldset>
+<fieldset>
+  <legend>Nav</legend>
+  <pre>
+    The nav element defines a set of navigation
+    links.
+  </pre>
+</fieldset>
+<fieldset>
+  <legend>Aside</legend>
+  <pre>
+    The aside element defines some content aside
+    from the content it is placed in (like a
+    sidebar).
+
+The aside content should be indirectly related 
+to the surrounding content.
+</pre>
+<aside>
+  lorem dipsum dolor
+</aside>
+</fieldset>
+<fieldset>
+  <legend>Figure</legend>
+  <figure>
+    <img src="joker.jpg" alt="joker" width="100%">
+    <figurecaption>Joker card, balatro</figurecaption>
+  </figure>
+</fieldset>
+<footer>
+   <p>&copy;<small> Don't give up? Im fried.</small></p>
+</footer>
+</body>
+</html>

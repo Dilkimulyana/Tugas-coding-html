@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .navbar {
+      background-color: #82ebfd;
+      display: block;
+      max-height: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    .navbar ul {
+      list-style: none;
+      font-size: 1em;
+      display: inline;
+      justify-content: left;
+      display: flex;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      background-color: #09afcc;
+      border-radius: 5px;
+      color: #000;
+    }
+    .left {
+      background-color: #2196F3;
+      padding: 20px;
+      float: left;
+      width: 20%;
+    }
+    .main {
+      background-color: #f1f1f1;
+      padding: 20px;
+      float: left;
+       width: 60%;
+    }
+    .right {
+      background-color: #04AA6D;
+      padding: 20px;
+      float: left;
+      width: 20%;
+    }
+    @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%;
+      }
+    }
+    footer {
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+    </ul>
+  </nav>
+<fieldset>
+  <legend>responsive images</legend>
+  <img src="alt-img.jpg" alt="Pemandangan" style="max-width: 100%;">
+</fieldset>
+<fieldset>
+  <legend>responsive text</legend>
+  <h1 style="font-size: 10vw;">New Text!</h1>
+</fieldset>
+<fieldset>
+  <legend>media queries</legend>
+  <h2>Media Queries</h2>
+<p>Resize the browser window.</p>
+
+<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+<div class="left">
+  <p>Left Menu</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right Content</p>
+</div>
+</fieldset>
+<footer>
+   <p>&copy;<small> Can i write something at here?</small></p>
+</footer>
+</body>
+</html>

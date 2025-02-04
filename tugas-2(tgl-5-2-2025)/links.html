@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html links</title>
+  <style>
+    .navbar {
+      background-color: #82ebfd;
+      display: block;
+      max-height: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 2px;
+    }
+    .navbar ul {
+      list-style-type: none;
+      font-size: 1em;
+      display: flex;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      background-color: #09afcc;
+      border-radius: 5px;
+      color: #000;
+    }
+    footer {
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+    </ul>
+  </nav>
+  <fieldset>
+    <legend>Links</legend>
+    <!-- tag a -->
+    <a href="#" target="_self">link</a><hr>
+    <p>With image</p>
+    <a href="default.asp">
+      <img src="joker.jpg" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a><hr>
+    <p>Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):</p>
+    <hr>
+    <p>Button as a Link</p><br>
+    <button onclick="#">HTML Tutorial</button><hr>
+    <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p><br>
+    <a href="#" title="sample">Visit our HTML Tutorial</a><hr>
+    <h2>More on Absolute URLs and Relative URLs</h2><hr>
+    <p>Use the <a> element to define a link<br><br>
+Use the href attribute to define the link address<br><br>
+Use the target attribute to define where to open the linked document<br><br>
+Use the element (inside <a>) to use an image as a link<br><br>
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program</p>
+  </fieldset>
+  <fieldset>
+    <legend>Link color</legend>
+    <p>By default, a link will appear like this (in all browsers):<br>
+
+      • An unvisited link is underlined and blue<br>
+      • A visited link is underlined and purple<br>
+      • An active link is underlined and red<br>
+      • You can change the link state colors, by using CSS:</p><br>
+      <h2>example</h2>
+      <ul>
+        <li>a:link</li>
+        <li>a:hover</li>
+        <li>a:visited</li>
+        <li>a:active</li>
+      </ul>
+  </fieldset>
+  <fieldset>
+    <legend>link bookmarks</legend>
+    <p>if a tag have id, use # to bring user to the id.</p>
+  </fieldset>
+</body>
+<footer>
+  <p>&copy;<small> Every second is important</small></p>
+</footer>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .navbar {
+      background-color: #82ebfd;
+      display: block;
+      max-height: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    .navbar ul {
+      list-style: none;
+      font-size: 0.1em;
+      display: inline;
+      justify-content: left;
+      display: flex;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      display: flex;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      background-color: #09afcc;
+      border-radius: 5px;
+      color: #000;
+    }
+    footer {
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Index.html">Links</a></li>
+    </ul>
+  </nav>
+<fieldset>
+  <legend></legend>
+</fieldset>
+<footer>
+   <p>&copy;<small> Every second is important</small></p>
+</footer>
+</body>
+</html>
+-->

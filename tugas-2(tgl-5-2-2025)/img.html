@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>images</title>
+  <style>
+    .navbar {
+      background-color: #82ebfd;
+      display: block;
+      max-height: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    .navbar ul {
+      list-style: none;
+      font-size: 1em;
+      display: inline;
+      justify-content: left;
+      font-weight: bold;
+      display: flex;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      display: flex;
+      padding: 5px;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      background-color: #09afcc;
+      border-radius: 5px;
+      color: #000;
+    }
+    footer {
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+    </ul>
+  </nav>
+<fieldset>
+  <legend>Images</legend>
+  <img src="joker.jpg" alt="joker" width="100px" height="100px">
+</fieldset>
+<fieldset>
+  <legend>Map</legend>
+  <p>Click on the joker card</p>
+  <img src="joker.jpg" alt="joker" usemap="#balatro" width="100px" height="100px">
+  <map name="balatro">
+    <area shape="rect"
+    coords="20,20,80,80" alt="balatro" href="balatro.jpg">
+    <map name="balatro">
+      <area shape="circle"
+      coords="90,90,20" href="bg.jpg">
+    </map>
+  </map>
+</fieldset>
+<fieldset>
+  <legend>background-image</legend>
+  <p>With css</p><br>
+  <style>
+    body {
+      background-image: url('bg.jpg');
+    }
+  </style>
+</fieldset>
+<fieldset>
+  <legend>picture element</legend>
+  <picture>
+  <source media="(min-width: 650px)" srcset="joker.jpg">
+  <source media="(min-width: 465px)" srcset="bg.jpg">
+  <img src="balatro.jpg" width="100%" height="auto">
+</picture>
+</fieldset>
+<footer>
+   <p>&copy;<small> One word change everything</small></p>
+</footer>
+</body>
+</html>
